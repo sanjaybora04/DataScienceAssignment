@@ -22,6 +22,6 @@ lm.fit(x_train,y_train)
 # coeff_df = pd.DataFrame(lm.coef_,x.columns,columns=['Coefficient'])
 # print(coeff_df)
 
-pred = lm.predict(x_test)
-plt.scatter(y_test,pred)
+pred = lm.predict(x_train)
+plt.scatter(y_train,pred)
 plt.show()
